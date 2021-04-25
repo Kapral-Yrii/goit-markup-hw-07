@@ -1,0 +1,23 @@
+.characteristic__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.characteristic__item {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+}
+.characteristic__icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-characteristic__item);
+  margin-bottom: 30px;
+}
+.characteristic__icon {
+  width: 70px;
+  height: 70px;
+}

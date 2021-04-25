@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css">    
-    <link rel="stylesheet" href="./css/styles.css">    
+    <link rel="stylesheet" href="./css/styles.min.css">    
 </head>
-<body>
+<body>          
     <header class="header">
         <div class="container header__container">
             <nav class="navigation">
@@ -87,7 +87,7 @@
         <section class="services">
             <div class="container">
                 <h2 class="title-section">Чем мы занимаемся</h2>
-                <ul class="list">
+                <ul class="list services__list">
                     <li class="services__item">
                         <img src="./images/activity/img1.jpg" alt="создание кода" width="370">
                         <div class="services__item-thumb">  
@@ -390,52 +390,52 @@
             <p class="modal__label">Оставьте свои данные, мы вам перезвоним</p>
             <form name="modal-form">
                 <ul class="list">
-                    <li class="modal__item">
-                        <label class="modal__form-label">
+                    <li class="modal-form__item">
+                        <label class="modal-form__label">
                             Имя
-                            <input class="modal__name-user" type="text" name="user_name" required>
-                            <svg class="modal__name-icon modal__icon--color">
+                            <input class="modal-form__name-user" type="text" name="user_name" required>
+                            <svg class="modal-form__name-icon modal-form__icon--color">
                                 <use href="./images/sprite.svg#icon-name"></use>
                             </svg>
                         </label>
                     </li>
-                    <li class="modal__item">
-                        <label class="modal__form-label">
+                    <li class="modal-form__item">
+                        <label class="modal-form__label">
                             Телефон
-                            <input class="modal__tel-user" type="tel" name="user_tel" maxlength="13" required>
-                            <svg class="modal__tel-icon modal__icon--color">
+                            <input class="modal-form__tel-user" type="tel" name="user_tel" maxlength="13" required>
+                            <svg class="modal-form__tel-icon modal-form__icon--color">
                                 <use href="./images/sprite.svg#icon-tel"></use>
                             </svg>
                         </label>
                     </li>
-                    <li class="modal__item">
-                        <label class="modal__form-label">
+                    <li class="modal-form__item">
+                        <label class="modal-form__label">
                             Почта
-                            <input class="modal__email-user" type="email" name="user_mail" required>
-                            <svg class="modal__email-icon modal__icon--color">
+                            <input class="modal-form__email-user" type="email" name="user_mail" required>
+                            <svg class="modal-form__email-icon modal-form__icon--color">
                                 <use href="./images/sprite.svg#icon-email"></use>
                             </svg>
                         </label>
                     </li>
-                    <li class="modal__item">
-                        <label class="modal__form-label">
+                    <li class="modal-form__item">
+                        <label class="modal-form__label">
                             Комментарий
-                            <textarea class="modal__comments-area" name="comments_area" rows="6" placeholder="Введите текст"></textarea>
+                            <textarea class="modal-form__comments-area" name="comments_area" rows="6" placeholder="Введите текст"></textarea>
                         </label>
                     </li>
                 </ul>
-                <label class="modal__checkbox-label">
+                <label class="modal-form__checkbox-label">
                     <input class="modal__checkbox" type="checkbox" name="checkbox" required>
-                    <span class="modal__checkbox-icon">
-                        <svg class="modal__checkbox-icon--checked">
+                    <span class="modal-form__checkbox-icon">
+                        <svg class="modal-form__checkbox-icon--checked">
                             <use href="./images/sprite.svg#icon-checkbox"></use>
                         </svg>
                     </span>    
                     Соглашаюсь с рассылкой и принимаю
-                    <a class="modal__checkbox-link" href="">Условия договора</a>
+                    <a class="modal-form__checkbox-link" href="">Условия договора</a>
                 </label>
-                <label class="modal__button">
-                    <button class="modal__button-submit" type="submit">Отправить</button>
+                <label class="modal-form__button">
+                    <button class="modal-form__button-submit" type="submit">Отправить</button>
                 </label>
             </form>
         </div>

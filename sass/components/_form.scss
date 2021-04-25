@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+.form__user-mail {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--dark-bg-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition-property: border, outline-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-timing-function);
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    outline-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+.form__button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  padding: 10px 62px 10px 29px;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+  }
+}
+.form__icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  width: 24px;
+  height: 24px;
+  fill: var(--dark-bg-text-color);
+}

@@ -1,0 +1,31 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.header__link--padding {
+  padding: var(--header-padding-links);
+}
+.header__icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header__icon-tel {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
